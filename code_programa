@@ -151,7 +151,7 @@ inmunidad(electrico,tierra).
 inmunidad(dragon,hada).
 
 /* INFERENCIAS */
-/* ¿El poquemon X tiene posibilidad de dar oneShot al pokemon Y?*/
+/* ¿El poquemon X tiene el poder para intentar  un oneShot al pokemon Y?*/
 one_shot(X,Y):-
     ataque(X,Z),
     defensa(Y,W),
