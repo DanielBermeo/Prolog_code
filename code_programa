@@ -1,6 +1,6 @@
 /* CONOCIMIENTO POKEMON*/
 /* Nombres */
-pokemon(bulbasaur)
+pokemon(bulbasaur).
 pokemon(charmander).
 pokemon(charizard).
 pokemon(mega_charizard).
@@ -151,7 +151,7 @@ inmunidad(electrico,tierra).
 inmunidad(dragon,hada).
 
 /* INFERENCIAS */
-/* ¿El poquemonX tiene posibilidad de dar oneShot al pokemon Y?*/
+/* ¿El poquemon X tiene posibilidad de dar oneShot al pokemon Y?*/
 one_shot(X,Y):-
     ataque(X,Z),
     defensa(Y,W),
