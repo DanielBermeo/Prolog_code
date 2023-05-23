@@ -31,7 +31,9 @@ ataque(pidgey,45).
 ataque(raticate,81).
 ataque(arbok,85).
 ataque(pikachu,55).
+ataque(sandslash,100).
 ataque(nidoqueen,92).
+ataque(clefable,70).
 ataque(wigglytuff,70).
 ataque(zubat,45).
 ataque(paras,70).
@@ -48,7 +50,9 @@ defensa(pidgey,40,35).
 defensa(raticate,60,70).
 defensa(arbok,69,79).
 defensa(pikachu,40).
+defensa(sandslash,110).
 defensa(nidoqueen,87).
+defensa(clefable,73).
 defensa(wigglytuff,45).
 defensa(zubat,35).
 defensa(paras,55).
