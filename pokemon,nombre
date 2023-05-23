@@ -1,4 +1,18 @@
 pokemon(bulbasaur)
+pokemon(charmander).
+pokemon(charizard).
+pokemon(mega_charizard_x).
+pokemon(squirtle).
+pokemon(metapod).
+pokemon(butterfree).
+pokemon(weedle).
+pokemon(pidgey).
+pokemon(raticate).
+pokemon(arbok).
+pokemon(pikachu).
+pokemon(sandslash).
+pokemon(nidoqueen).
+
 
 tipo(bulbasaur,planta,veneno).
 tipo(charmander,fuego,fuego).
@@ -18,6 +32,10 @@ tipo(clefable,hada,hada).
 tipo(wigglytuff,normal,hada).
 tipo(zubat,veneno,volador).
 tipo(paras,bicho,planta).
+pokemon(clefable).
+pokemon(wigglytuff).
+pokemon(zubat).
+pokemon(paras).
 
 ataque(bulbasaur,49).
 ataque(charmander,52).
