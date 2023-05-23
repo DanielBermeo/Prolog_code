@@ -82,51 +82,31 @@ defensa(paras,55).
 /* INTERACCIONES POKEMON */
 /* Efectividades  */
 /* efectivo(ES_EFECTIVO_X,TIPO_X)*/
-efectivo(acero,hielo).
-efectivo(acero,roca).
-efectivo(acero,hada).
+/* Efectividades  */
+/* efectivo(ES_EFECTIVO_X,TIPO_X)*/
+
 efectivo(volador,normal).
 efectivo(volador,planta).
 efectivo(volador,bicho).
 efectivo(volador,volador).
-efectivo(agua,roca).
 efectivo(agua,tierra).
 efectivo(agua,fuego).
-efectivo(hielo,volador).
-efectivo(hielo,planta).
-efectivo(hielo,tierra).
-efectivo(hielo,dragon).
 efectivo(planta,agua).
 efectivo(planta,tierra).
-efectivo(planta,roca).
 efectivo(bicho,planta).
-efectivo(bicho,psychic).
-efectivo(bicho,siniestro).
 efectivo(electrico,volador).
 efectivo(electrico,agua).
-efectivo(roca,hielo).
-efectivo(roca,volador).
-efectivo(roca,bicho).
-efectivo(roca,fuego).
 efectivo(tierra,electrico).
-efectivo(tierra,roca).
 efectivo(tierra,fuego).
 efectivo(tierra,veneno).
-efectivo(tierra,acero).
-efectivo(fuego,hielo).
 efectivo(fuego,planta).
 efectivo(fuego,bicho).
-efectivo(fuego,acero).
 efectivo(hada,volador).
 efectivo(hada,dragon).
-efectivo(hada,siniestro).
 efectivo(veneno,planta).
 efectivo(veneno,hada).
 efectivo(dragon,dragon).
-efectivo(siniestro,psychic).
-efectivo(siniestro,fantasma).
-efectivo(fantasma,psychic).
-efectivo(fantasma,fantasma).
+/* fin efectividades*/
 /* fin efectividades*/
 
 
