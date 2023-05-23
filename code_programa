@@ -150,7 +150,7 @@ inmunidad(tierra,volador).
 inmunidad(electrico,tierra).
 inmunidad(dragon,hada).
 
-
+/* INFERENCIAS */
 /* ¿El poquemonX tiene posibilidad de dar oneShot al pokemon Y?*/
 one_shot(X,Y):-
     ataque(X,Z),
