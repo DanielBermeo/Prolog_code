@@ -1,5 +1,8 @@
+/* CONOCIMIENTO POKEMON*/
+/* Nombres */
 pokemon(bulbasaur)
 
+/* Tipos  */
 tipo(bulbasaur,planta,veneno).
 tipo(charmander,fuego,fuego).
 tipo(charizard,fuego,volador).
@@ -19,6 +22,7 @@ tipo(wigglytuff,normal,hada).
 tipo(zubat,veneno,volador).
 tipo(paras,bicho,planta).
 
+/* Estadisticas */
 ataque(bulbasaur,49).
 ataque(charmander,52).
 ataque(charizard,84).
