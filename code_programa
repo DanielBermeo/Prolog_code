@@ -150,7 +150,7 @@ inmunidad(tierra,volador).
 inmunidad(electrico,tierra).
 inmunidad(dragon,hada).
 
-* BUSCA QUE NO EXISTA ESA RESISTENCIA/ INMUNIDAD */
+/* BUSCA QUE NO EXISTA ESA RESISTENCIA/ INMUNIDAD */
 noresiste(A,B) :- 
    not(resistencia(A,B)),
     not(inmunidad(A,B)).
@@ -162,8 +162,8 @@ one_shot(X,Y):-
     defensa(Y,W),
     Z>W.
     
- /*  1.-¿A que tipos puedo atacar si tengo un Pokémon de tipo agua(A),tierra(B)?
-Respuesta: puedes  atacar Pokémon de tipo(C)*/
+ /* ¿A que tipos puedo atacar si tengo un Pokémon de tipo agua(X),tierra(Y)?
+Respuesta: puedes  atacar Pokémon de tipo(Z)*/
  
 especialista(X,Y,Z):-
  efectivo(X,Z), 
@@ -171,21 +171,21 @@ especialista(X,Y,Z):-
     efectivo(Y,Z),
     noresiste(Y,Z),
     not( efectivo(X,Z)).
-    not(A=B).
 
-/*2.-A que combinaciones de tipo les pega super efectivo el tipo agua(C)
+
+/*¿A que combinaciones de tipo les pega super efectivo el tipo agua(X)?
  
-3.-Que tipos le pegan super eficaz a mi Pokémon de tipo agua(A) tierra(B)
-Respuesta: es débil x4 al tipo planta (C)*/
+¿Que tipos le pegan super eficaz a mi Pokémon de tipo agua(A) tierra(B)?
+Respuesta: es débil x4 al tipo planta (X)*/
 
 counter(A,B,X):-
     efectivo(X,A),
     efectivo(X,B),
     /*evita resultado x4 de dos tipos iguales*/
-not(A=B).
+	not(A=B).
 
-/*4.-A que tipos tiene debilidad x2 mi pokemon de tipo fuego(A) volador(B)
-Respuesta: eléctrico(C)*/
+/* ¿Que tipo es eficaz al x2 contra mi pokemon de tipo fuego(T1) volador(T2)?
+Respuesta: eléctrico(X)*/
 counter2(T1,T2,X):-
   efectivo(X,T1),
     noresiste(X,T2),
@@ -194,25 +194,25 @@ counter2(T1,T2,X):-
     noresiste(X,T1),
      not( counter(T1,T2,X)).
  
-/*5.-De que ataques afectan mas a mi Pokémon de tipo dragón(A), volador(B)
-Respuesta: (C)*/
+/*5.-¿Del Pokémon de tipo dragón(A), volador(B), cuales son todos sus counter?
+Respuesta: (X)*/
  
-counterdef(A,B,X):-
+lista_conters(A,B,X):-
     counter(A,B,X);
     counter2(A,B,X).
-//////////////////////////
+
 /*6.-Que Pokémon puedo ocupar para vencer a gengar (A) es de tipos(B,C)
 RESPUESTA:(POKEMON(X) TIPO(Y,Z))
  
-7.-Contra que Pokémon me conviene mandar a la pelea a mi exeggcute (A) de los tipos (B,C)
-RESPUSTA (POKEMON TIPO Y,Z)*/
+7.-Contra que Pokémon me conviene mandar a la pelea a mi exeggcute (X) de los tipos (Y,Z)
+RESPUSTA (POKEMON A TIPO B,C)*/
  
 couter_p(tipo(X,Y,Z),tipo(A,B,C)):-
     tipo(A,B,C),
     tipo(X,Y,Z),
     noresiste(Z,B),
- counterdef(B,C,Y);
+ lista_conters(B,C,Y);
      tipo(A,B,C),
     tipo(X,Y,Z),
     noresiste(Y,B),
- counterdef(B,C,X).
+ lista_conters(B,C,X).
