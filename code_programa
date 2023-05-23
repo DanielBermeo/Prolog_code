@@ -61,15 +61,15 @@ ataque(paras,70).
 
 defensa(bulbasaur,49).
 defensa(charmander,43).
-defensa(charizard,78,85).
-defensa(mega_charizard,111,85).
-defensa(squirtle,65,64).
-defensa(metapod,55,25).
-defensa(butterfree,50,80).
-defensa(weedle,30,20).
-defensa(pidgey,40,35).
-defensa(raticate,60,70).
-defensa(arbok,69,79).
+defensa(charizard,78).
+defensa(mega_charizard,111).
+defensa(squirtle,65).
+defensa(metapod,55).
+defensa(butterfree,50).
+defensa(weedle,30).
+defensa(pidgey,40).
+defensa(raticate,60).
+defensa(arbok,69).
 defensa(pikachu,40).
 defensa(sandslash,110).
 defensa(nidoqueen,87).
